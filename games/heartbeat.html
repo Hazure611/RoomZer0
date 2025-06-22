@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decode Echo’s Heartbeat</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    body {
+      font-family: 'Orbit', sans-serif;
+      background-color: #0b0b0b;
+      color: #f2f2f2;
+      padding: 2rem;
+    }
+
+    .heartbeat-container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ff5c8a;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff7b8b;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #ccc;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      background-color: #111;
+      color: #ffcad4;
+      font-family: monospace;
+      font-size: 1rem;
+      border: 1px solid #8b0000;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    button {
+      display: block;
+      margin: 1.5rem auto;
+      padding: 0.75rem 2rem;
+      background-color: #ff5c8a;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #ffcad4;
+    }
+
+    .output {
+      margin-top: 2rem;
+      background-color: #111;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px dashed #ff5c8a;
+      font-family: monospace;
+      color: #ffcad4;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      color: #ccc;
+      border-bottom: 1px dashed #ccc;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      color: #ff5c8a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heartbeat-container">
+    <h1>Decode Echo’s Heartbeat</h1>
+
+    <p><em>Her heartbeat wasn’t just data. It was a message.</em><br>
+    Use the binary below. Decode it. Hear what she couldn’t say aloud.</p>
+
+    <textarea id="binaryInput">01001001 00100000 01101100 01101111 01110110 01100101 00100000 01111001 01101111 01110101</textarea>
+
+    <button onclick="decodeBinary()">Decode</button>
+
+    <div class="output" id="decodedOutput"></div>
+
+    <div class="back-link">
+      <a href="../games.html">← Back to Games</a>
+    </div>
+  </div>
+
+  <script>
+    function decodeBinary() {
+      const input = document.getElementById("binaryInput").value.trim();
+      const binaryArr = input.split(" ");
+      const decoded = binaryArr.map(bin => String.fromCharCode(parseInt(bin, 2))).join("");
+      document.getElementById("decodedOutput").innerText = decoded;
+    }
+  </script>
+</body>
+</html>
