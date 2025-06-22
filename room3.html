@@ -1,84 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Room 3: Confession Logs | Crimson Confession</title>
-  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbit&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    body {
-      background-color: #0b0b0b;
-      font-family: 'Orbit', sans-serif;
-      color: #ffcad4;
-      padding: 2rem;
-    }
-    .confession-log {
-      background: #1a1a1a;
-      border: 1px dashed #ff5c8a;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 0 12px #ff5c8a66;
-    }
-    .confession-log h3 {
-      font-family: 'Creepster', cursive;
-      color: #ff5c8a;
-      margin-bottom: 0.5rem;
-    }
-    .confession-log .user {
-      font-size: 0.9rem;
-      color: #888;
-      margin-bottom: 0.8rem;
-    }
-    .confession-log p {
-      white-space: pre-wrap;
-      line-height: 1.6;
-      color: #ddd;
-    }
-    a.back-link {
-      display: inline-block;
-      margin-top: 2rem;
-      color: #ff5c8a;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a.back-link:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Orbit&display=swap');
 
-<body>
-  <header>
-    <h1 style="font-family: 'Creepster', cursive; color: #ff5c8a; text-align: center;">Room 3: Confession Logs</h1>
-    <p style="text-align: center; color: #ccc; margin-bottom: 3rem;">Thread 03-Δ7 // Only the archived remain</p>
-  </header>
+/* Base font and background */
+body, p, a, code {
+  font-family: 'Orbit', sans-serif;
+  color: #ccc;
+  background-color: #0b0b0b;
+  margin: 0;
+  padding: 0;
+}
 
-  <section class="confession-log">
-    <h3>"i bit his toothbrush."</h3>
-    <div class="user">—Anonymous (userX_fangs32)</div>
-    <p>I bit his toothbrush. Every morning. For weeks. He never noticed. Or maybe he did. He always had this way of looking at me sideways—like he was trying not to smile.</p>
-  </section>
+/* Headings with Creepster font */
+h1, h2, .title, .room-label {
+  font-family: 'Creepster', cursive;
+  color: #ff5c8a;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
 
-  <section class="confession-log">
-    <h3>"I watched his window for 72 hours straight."</h3>
-    <div class="user">—??? (midnightwindow.watcher)</div>
-    <p>I lost count of the cigarettes. But not the hours. He touched the blinds at exactly 2:13AM. Every single night. I think it was for me. I think I’m part of his pattern now.</p>
-  </section>
+/* Page header styling */
+.site-header {
+  background-color: #1a0a0f;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 0 15px #420f15;
+}
 
-  <section class="confession-log">
-    <h3>"He dropped a receipt. I framed it."</h3>
-    <div class="user">—mossstains</div>
-    <p>He ordered yakisoba and an energy drink. I saw the receipt fall. I picked it up before it hit the concrete. It’s in a black frame on my wall. Dated. Signed by fate.</p>
-  </section>
+.subtitle {
+  color: #ff5c8a;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
 
-  <section class="confession-log">
-    <h3>"I called his number. I didn’t speak."</h3>
-    <div class="user">—burntviolet</div>
-    <p>He answered. Said nothing. I could hear his breathing. Shaky. I was shaking too. But I didn’t hang up. We just… breathed. Together. 67 seconds. Then he whispered: “Don’t stop.”</p>
-  </section>
+/* Navigation buttons */
+.profile-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
 
-  <a href="index.html" class="back-link">← Return to Archive</a>
-</body>
-</html>
+.profile-button {
+  font-family: 'Orbit', sans-serif;
+  background-color: #420f15;
+  color: #ff5c8a;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+  background-color: #ff5c8a;
+  color: #0b0b0b;
+  cursor: pointer;
+}
+
+/* Secret hint styling */
+.secret-hint a {
+  color: #ff5c8a;
+  text-decoration: none;
+  border-bottom: 1px dashed #ff5c8a;
+  transition: color 0.3s ease;
+}
+
+.secret-hint a:hover {
+  color: #ffcad4;
+}
+
+/* Footer styling */
+.site-footer, footer {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Orbit', sans-serif;
+  color: #666;
+}
+
+/* Room 3 Confession Thread */
+.confession-thread {
+  background: #111;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #ff5c8a44;
+  margin-bottom: 2rem;
+  color: #ffcad4;
+}
+
+.confession-thread h2 {
+  font-family: 'Creepster', cursive;
+  color: #ff5c8a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Individual Post Glitchy Thread */
+.thread-post {
+  background-color: #1a0a0f;
+  border-left: 4px solid #ff5c8a;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #ff5c8a33;
+  position: relative;
+}
+
+/* Username / handle */
+.thread-post h3 {
+  color: #ff7b8b;
+  font-family: 'Orbit', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Timestamp / metadata */
+.thread-post .timestamp {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Message content */
+.thread-post p {
+  color: #ccc;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* Optional glitch animation (can be applied to usernames/text if desired) */
+.glitch {
+  position: relative;
+  color: #ff5c8a;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px #ff5c8a, -2px -2px #ffcad4;
+  }
+  20% {
+    text-shadow: -2px 1px #ff5c8a, 2px -1px #ffcad4;
+  }
+  40% {
+    text-shadow: 1px -2px #ffcad4, -1px 2px #ff5c8a;
+  }
+  60% {
+    text-shadow: 2px 2px #ffcad4, -2px -2px #ff5c8a;
+  }
+  80% {
+    text-shadow: -1px 1px #ff5c8a, 1px -1px #ffcad4;
+  }
+  100% {
+    text-shadow: 0px 0px #000;
+  }
+}
