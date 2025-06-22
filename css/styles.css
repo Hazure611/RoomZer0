@@ -1,83 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Orbit&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crimson Confession | Room 0</title>
 
-/* Base font */
-body, p, a, code {
-  font-family: 'Orbit', sans-serif;
-  color: #ccc;
-  background-color: #0b0b0b;
-}
+  <!-- Fonts: Creepster for headings, Orbit for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbit&display=swap" rel="stylesheet" />
 
-/* Headings with Creepster font */
-h1, h2, .title, .room-label {
-  font-family: 'Creepster', cursive;
-  color: #ff5c8a;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-}
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-/* Navigation buttons */
-.profile-button {
-  font-family: 'Orbit', sans-serif;
-  background-color: #420f15;
-  color: #ff5c8a;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  margin: 0.3rem;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
+<body>
+  <header class="site-header">
+    <h1 class="title">CRIMSON CONFESSION</h1>
+    <p class="subtitle">Room 0: Echo’s Silence, Surei’s Shrine</p>
 
-.profile-button:hover {
-  background-color: #ff5c8a;
-  color: #0b0b0b;
-  cursor: pointer;
-}
+    <nav class="profile-links">
+      <a href="echo.html" class="profile-button">Echo Onigahara</a>
+      <a href="surei.html" class="profile-button">Surei Chiya</a>
+      <a href="confession-room.html" class="profile-button">Submit a Confession</a>
+      <a href="games.html" class="profile-button">Mini-Games</a>
+      <a href="about.html" class="profile-button">About the Project</a>
+      <a href="order.html" class="profile-button">Order the Book</a>
+    </nav>
+  </header>
 
-/* Relics Gallery */
-.relics-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.3rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
+  <main>
+    <section class="relics-gallery" id="room0">
+      <h2 class="room-label">Room 0</h2>
 
-.relic {
-  background-color: #1a1a1a;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #420f15;
-  max-width: 280px;
-  text-align: center;
-}
+      <div class="relic">
+        <img src="images/room0-echo-undie1.jpg" alt="Echo's Underwear, Stolen 1" />
+        <p>Kept. Not Washed.</p>
+      </div>
 
-.relic img {
-  max-width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
+      <div class="relic">
+        <img src="images/room0-echo-undie2.jpg" alt="Echo's Underwear, Stolen 2" />
+        <p>What he took. What she forgot.</p>
+      </div>
 
-/* Add hover zoom effect */
-.relic img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
+      <div class="relic">
+        <img src="images/room0-surei-photo.png" alt="Surei's Photo" />
+        <p>Taken the day before she left.</p>
+      </div>
 
-/* Fix for clickable images in file inspection */
-.clickable-image {
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: border-color 0.3s ease;
-}
+      <div class="relic">
+        <img src="images/room0-echo-photo.png" alt="Echo's Photo" />
+        <p>She didn’t know he kept this.</p>
+      </div>
 
-.clickable-image:hover {
-  border-color: #ff5c8a;
-  transform: scale(1.05);
-}
+      <div class="relic">
+        <img src="images/room0-the-chair.jpg" alt="The Chair" />
+        <p>Her thighs remember.</p>
+      </div>
+    </section>
 
-/* Secret hint styling */
-.secret-hint a:hover {
-  color: #ffcad4;
-}
+    <p class="secret-hint" style="text-align:center; margin-top: 2rem; font-size: 0.9rem; color: #555;">
+      Feeling curious? <a href="room0-secret.html" style="color:#ff5c8a; text-decoration: none; border-bottom: 1px dashed #ff5c8a;">Click here if you dare</a>
+    </p>
+
+    <section style="text-align: center; margin-top: 4rem; font-family: 'Orbit', sans-serif;">
+      <h2 style="color: #ff7b8b;">🩸 Weekly Diary Drops</h2>
+      <p style="color: #ccc;">
+        Echo never stopped writing.<br />
+        Every week, we drop a new entry straight from her mind.<br />
+        Confessions. Cravings. Chaos.<br /><br />
+        📥 Send a blank email to:<br />
+        <code style="color: #ffcad4; font-size: 1.1rem;">confessionroom0X@proton.me</code><br />
+        to get added to the drop list.
+      </p>
+
+      <p style="margin-top: 2rem; color: #888;">
+        🖋️ Written by <strong><a href="https://www.amazon.com/author/hazuresaurvale25" target="_blank" rel="noopener noreferrer" style="color: #ff5c8a; text-decoration: none;">Hazure Vale</a></strong><br />
+        (Blood-soaked, guilt-wracked, doomed romantic).
+      </p>
+    </section>
+  </main>
+
+  <footer style="text-align: center; padding: 2rem; font-family: 'Orbit', sans-serif; color: #666;">
+    <p>© 2025 Crimson Confession — Built with obsession and decay</p>
+  </footer>
+</body>
+</html>
