@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crimson Confession | Games</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    body {
+      font-family: 'Orbit', sans-serif;
+      background-color: #0b0b0b;
+      color: #f2f2f2;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .games-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #8b0000;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff7b8b;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .game-section {
+      margin-bottom: 3rem;
+    }
+
+    .game-section h2 {
+      font-size: 1.7rem;
+      color: #ffcad4;
+      margin-bottom: 0.5rem;
+    }
+
+    .game-section p {
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+
+    .game-section a {
+      color: #ff5c8a;
+      text-decoration: underline;
+    }
+
+    .obsession-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .obsession-gallery img {
+      width: 180px;
+      border: 2px solid #420f15;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .obsession-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      color: #eee;
+      border-bottom: 1px dashed #eee;
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      color: #ff5c8a;
+      border-color: #ff5c8a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="games-container">
+    <h1>Crimson Games</h1>
+
+    <div class="game-section">
+      <h2>1. Decode Echo’s Heartbeat</h2>
+      <p>Echo’s pulse recorded in binary. <br>Decode her heartbeat to reveal the message left behind.</p>
+      <a href="games/heartbeat.html">▶ Play</a>
+    </div>
+
+    <div class="game-section">
+      <h2>2. Surei’s Hidden Message</h2>
+      <p>He never sent it. He encrypted it. Can you unlock what he meant to say?</p>
+      <a href="games/hidden-message.html">▶ Play</a>
+    </div>
+
+    <div class="game-section">
+      <h2>3. File Inspection: Surei’s Obsession</h2>
+      <p>Click to examine stolen files and physical evidence he archived from her life.</p>
+
+      <div class="obsession-gallery">
+        <img src="images/room0-echo-undie1.jpg" alt="Echo's Undies 1">
+        <img src="images/room0-echo-undie2.jpg" alt="Echo's Undies 2">
+        <img src="images/room0-echo-photo.png" alt="Echo's Photo">
+        <img src="images/room0-the-chair.jpg" alt="The Chair">
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Return to the Archive</a>
+    </div>
+  </div>
+</body>
+</html>
