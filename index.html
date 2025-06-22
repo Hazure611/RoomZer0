@@ -7,89 +7,49 @@
 
   <!-- Orbit Font -->
   <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet" />
+  <!-- Creepster Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet" />
+  <!-- Your custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    body {
-      font-family: 'Orbit', sans-serif;
-      background-color: #121212;
-      color: #ffcad4;
-      margin: 0;
-      padding: 0 1rem 3rem;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    main {
-      width: 100%;
-      max-width: 700px;
-      margin-top: 3rem;
-    }
-    section.diary-drop {
-      text-align: center;
-      margin-bottom: 4rem;
-      color: #ccc;
-      line-height: 1.5;
-    }
-    section.diary-drop h2 {
-      color: #ff7b8b;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    section.diary-drop code {
-      color: #ffcad4;
-      font-size: 1.2rem;
-      user-select: all;
-    }
-    section.diary-drop a {
-      color: #ff5c8a;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      font-family: 'Orbit', sans-serif;
-      color: #666;
-      margin-top: auto;
-      padding: 2rem 0;
-      user-select: none;
-    }
-  </style>
 </head>
 
 <body>
-  <header class="site-header" style="width:100%; max-width:700px; margin: auto;">
-    <h1 class="title" style="color:#ff5c8a; text-align:center; margin-top:2rem;">CRIMSON CONFESSION</h1>
-    <p class="subtitle" style="text-align:center; color:#ff8fa1; margin-bottom: 2rem;">Echo’s Silence, Surei’s Shrine</p>
+  <header class="site-header">
+    <h1 class="title">CRIMSON CONFESSION</h1>
+    <p class="subtitle">Echo’s Silence, Surei’s Shrine</p>
 
-    <nav class="profile-links" style="display:flex; justify-content:center; gap: 1rem; flex-wrap: wrap;">
-      <a href="echo.html" class="profile-button" style="color:#ff8fa1; text-decoration:none;">Echo Onigahara</a>
-      <a href="surei.html" class="profile-button" style="color:#ff8fa1; text-decoration:none;">Surei Chiya</a>
-      <a href="confession-room.html" class="profile-button" style="color:#ff8fa1; text-decoration:none;">Submit a Confession</a>
-      <a href="about.html" class="profile-button" style="color:#ff8fa1; text-decoration:none;">About the Project</a>
-      <a href="order.html" class="profile-button" style="color:#ff8fa1; text-decoration:none;">Order the Book</a>
+    <nav class="profile-links">
+      <a href="echo.html" class="profile-button">Echo Onigahara</a>
+      <a href="surei.html" class="profile-button">Surei Chiya</a>
+      <a href="confession-room.html" class="profile-button">Submit a Confession</a>
+      <a href="room3.html" class="profile-button" style="background: #1a0a0f; color: #ffcad4; border: 1px dashed #ff5c8a;">
+        🕷️ Room 3: The Thread
+      </a>
+      <a href="about.html" class="profile-button">About the Project</a>
+      <a href="order.html" class="profile-button">Order the Book</a>
     </nav>
   </header>
 
   <main>
-    <section class="diary-drop">
-      <h2>🩸 Weekly Diary Drops</h2>
-      <p>
+    <section style="text-align: center; margin-top: 4rem; font-family: 'Orbit', sans-serif;">
+      <h2 style="color: #ff7b8b;">🩸 Weekly Diary Drops</h2>
+      <p style="color: #ccc;">
         Echo never stopped writing.<br />
         Every week, we drop a new entry straight from her mind.<br />
         Confessions. Cravings. Chaos.<br /><br />
         📥 Send a blank email to:<br />
-        <code>confessionroom0X@proton.me</code><br />
+        <code style="color: #ffcad4; font-size: 1.1rem;">confessionroom0X@proton.me</code><br />
         to get added to the drop list.
       </p>
 
-      <p style="margin-top: 2rem; color: #aaa; font-style: italic;">
+      <p style="margin-top: 2rem; color: #888;">
         🖋️ Written by <strong><a href="https://www.amazon.com/author/hazuresaurvale25" target="_blank" rel="noopener noreferrer" style="color: #ff5c8a; text-decoration: none;">Hazure Vale</a></strong><br />
         (Blood-soaked, guilt-wracked, doomed romantic).
       </p>
     </section>
   </main>
 
-  <footer>
+  <footer style="text-align: center; padding: 2rem; font-family: 'Orbit', sans-serif; color: #666;">
     <p>© 2025 Crimson Confession — Built with obsession and decay</p>
   </footer>
 </body>
