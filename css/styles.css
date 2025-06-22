@@ -93,6 +93,7 @@ h1, h2, .title, .room-label {
   font-family: 'Creepster', cursive;
   color: #ff5c8a;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .confession-thread .confessor {
@@ -115,7 +116,7 @@ h1, h2, .title, .room-label {
   color: #ddd;
 }
 
-/* Thread-style forum post blocks */
+/* Thread-style forum post blocks (Room 3 + Surei Obsession) */
 .thread-post {
   background-color: #1a0a0f;
   border-left: 4px solid #ff5c8a;
@@ -123,15 +124,42 @@ h1, h2, .title, .room-label {
   margin-bottom: 1.5rem;
   border-radius: 6px;
   box-shadow: 0 0 10px #ff5c8a33;
+  position: relative;
 }
 
 .thread-post h3 {
   color: #ff7b8b;
   font-family: 'Orbit', sans-serif;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
+}
+
+.thread-post .timestamp {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .thread-post p {
   color: #ccc;
   line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* Optional glitch animation (for usernames/text) */
+.glitch {
+  position: relative;
+  color: #ff5c8a;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0%   { text-shadow: 2px 2px #ff5c8a, -2px -2px #ffcad4; }
+  20%  { text-shadow: -2px 1px #ff5c8a, 2px -1px #ffcad4; }
+  40%  { text-shadow: 1px -2px #ffcad4, -1px 2px #ff5c8a; }
+  60%  { text-shadow: 2px 2px #ffcad4, -2px -2px #ff5c8a; }
+  80%  { text-shadow: -1px 1px #ff5c8a, 1px -1px #ffcad4; }
+  100% { text-shadow: 0px 0px #000; }
 }
