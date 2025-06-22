@@ -78,3 +78,38 @@ h1, h2, .title, .room-label {
   font-family: 'Orbit', sans-serif;
   color: #666;
 }
+/* Room 3 confession thread styling */
+.confession-thread {
+  background: #111;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #ff5c8a44;
+  margin-bottom: 2rem;
+  color: #ffcad4;
+}
+
+.confession-thread h2 {
+  font-family: 'Creepster', cursive;
+  color: #ff5c8a;
+  margin-bottom: 1rem;
+}
+
+.confession-thread .confessor {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 3px solid #ff5c8a;
+  background: #1a1a1a;
+  border-radius: 6px;
+}
+
+.confession-thread .confessor h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ff8fa1;
+}
+
+.confession-thread .confessor p {
+  margin: 0;
+  font-style: italic;
+  color: #ddd;
+}
