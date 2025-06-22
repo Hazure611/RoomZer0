@@ -1,79 +1,60 @@
-/* ====== GLOBAL STYLES ====== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crimson Confession | Room 0</title>
 
-body {
-  background-color: #0b0b0b;
-  color: #e3d6d2;
-  font-family: 'Shadows Into Light', cursive;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  <!-- 🌑 Orbit Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
 
-/* ====== LOGO SECTION ====== */
-.logo-container {
-  text-align: center;
-  padding: 2rem 0 1rem 0;
-}
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-.logo {
-  max-width: 280px;
-  height: auto;
-  filter: drop-shadow(0 0 8px #e60026);
-}
+<body>
+  <header class="site-header">
+    <h1 class="title">CRIMSON CONFESSION</h1>
+    <p class="subtitle">Room 0: Echo’s Silence, Surei’s Shrine</p>
 
-/* ====== NAVIGATION ====== */
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
+    <nav class="profile-links">
+      <a href="echo.html" class="profile-button">Echo Onigahara</a>
+      <a href="surei.html" class="profile-button">Surei Chiya</a>
+    </nav>
+  </header>
 
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid transparent;
-  transition: all 0.3s ease;
-}
+  <main>
+    <section class="relics-gallery" id="room0">
+      <h2 class="room-label">Room 0</h2>
 
-.nav-links a:hover {
-  color: #e60026;
-  border-bottom: 1px solid #e60026;
-}
+      <div class="relic">
+        <img src="images/room0-echo-undie1.jpg" alt="Echo's Underwear, Stolen 1" />
+        <p>Kept. Not Washed.</p>
+      </div>
 
-/* ====== MAIN TEXT ====== */
-.intro-text {
-  text-align: center;
-  padding: 3rem 1rem;
-}
+      <div class="relic">
+        <img src="images/room0-echo-undie2.jpg" alt="Echo's Underwear, Stolen 2" />
+        <p>What he took. What she forgot.</p>
+      </div>
 
-.intro-text h1 {
-  font-size: 2.5rem;
-  color: #ff4b5c;
-  text-shadow: 0 0 5px #ff4b5c;
-  margin-bottom: 1rem;
-}
+      <div class="relic">
+        <img src="images/room0-surei-photo.png" alt="Surei's Photo" />
+        <p>Taken the day before she left.</p>
+      </div>
 
-.intro-text p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  color: #c7c7c7;
-}
+      <div class="relic">
+        <img src="images/room0-echo-photo.png" alt="Echo's Photo" />
+        <p>She didn’t know he kept this.</p>
+      </div>
 
-/* ====== FOOTER ====== */
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  font-size: 0.85rem;
-  color: #777;
-}
+      <div class="relic">
+        <img src="images/room0-the-chair.jpg" alt="The Chair" />
+        <p>Her thighs remember.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Crimson Confession</p>
+  </footer>
+</body>
+</html>
