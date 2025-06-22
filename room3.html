@@ -1,159 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Orbit&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room 3: The Thread</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&family=Creepster&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="title">ROOM 3: The Thread</h1>
+    <p class="subtitle">They’re watching. They’re writing. And they know you're here.</p>
+    <nav class="profile-links">
+      <a href="index.html" class="profile-button">← Back to Index</a>
+    </nav>
+  </header>
 
-/* Base font and background */
-body, p, a, code {
-  font-family: 'Orbit', sans-serif;
-  color: #ccc;
-  background-color: #0b0b0b;
-  margin: 0;
-  padding: 0;
-}
+  <main>
+    <section class="confession-thread">
+      <h2>🕷️ THE THREAD 🕷️</h2>
 
-/* Headings with Creepster font */
-h1, h2, .title, .room-label {
-  font-family: 'Creepster', cursive;
-  color: #ff5c8a;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-}
+      <div class="thread-post">
+        <h3>@velvet_wounds</h3>
+        <span class="timestamp">2025‑06‑22 03:12 AM</span>
+        <p>he smelled like rot and roses. tell me again why I’m not allowed to miss him?</p>
+      </div>
 
-/* Page header styling */
-.site-header {
-  background-color: #1a0a0f;
-  padding: 2rem 1rem;
-  text-align: center;
-  box-shadow: 0 0 15px #420f15;
-}
+      <div class="thread-post">
+        <h3 class="glitch">@obsessively_mine</h3>
+        <span class="timestamp">2025‑06‑22 03:17 AM</span>
+        <p>i made a shrine too. my Surei has teeth made of glass and he still chews through me every night.</p>
+      </div>
 
-.subtitle {
-  color: #ff5c8a;
-  font-style: italic;
-  margin-top: 0.3rem;
-}
+      <div class="thread-post">
+        <h3>@0xRedacted</h3>
+        <span class="timestamp">2025‑06‑22 03:21 AM</span>
+        <p>404. confession not found. (but I saw what you did. and so did he.)</p>
+      </div>
+    </section>
+  </main>
 
-/* Navigation buttons */
-.profile-links {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-}
-
-.profile-button {
-  font-family: 'Orbit', sans-serif;
-  background-color: #420f15;
-  color: #ff5c8a;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.profile-button:hover {
-  background-color: #ff5c8a;
-  color: #0b0b0b;
-  cursor: pointer;
-}
-
-/* Secret hint styling */
-.secret-hint a {
-  color: #ff5c8a;
-  text-decoration: none;
-  border-bottom: 1px dashed #ff5c8a;
-  transition: color 0.3s ease;
-}
-
-.secret-hint a:hover {
-  color: #ffcad4;
-}
-
-/* Footer styling */
-.site-footer, footer {
-  text-align: center;
-  padding: 2rem;
-  font-family: 'Orbit', sans-serif;
-  color: #666;
-}
-
-/* Room 3 Confession Thread */
-.confession-thread {
-  background: #111;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #ff5c8a44;
-  margin-bottom: 2rem;
-  color: #ffcad4;
-}
-
-.confession-thread h2 {
-  font-family: 'Creepster', cursive;
-  color: #ff5c8a;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* Individual Post Glitchy Thread */
-.thread-post {
-  background-color: #1a0a0f;
-  border-left: 4px solid #ff5c8a;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 0 10px #ff5c8a33;
-  position: relative;
-}
-
-/* Username / handle */
-.thread-post h3 {
-  color: #ff7b8b;
-  font-family: 'Orbit', sans-serif;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Timestamp / metadata */
-.thread-post .timestamp {
-  font-size: 0.85rem;
-  color: #888;
-  font-style: italic;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-/* Message content */
-.thread-post p {
-  color: #ccc;
-  line-height: 1.6;
-  white-space: pre-line;
-}
-
-/* Optional glitch animation (can be applied to usernames/text if desired) */
-.glitch {
-  position: relative;
-  color: #ff5c8a;
-  animation: glitch 1.5s infinite;
-}
-
-@keyframes glitch {
-  0% {
-    text-shadow: 2px 2px #ff5c8a, -2px -2px #ffcad4;
-  }
-  20% {
-    text-shadow: -2px 1px #ff5c8a, 2px -1px #ffcad4;
-  }
-  40% {
-    text-shadow: 1px -2px #ffcad4, -1px 2px #ff5c8a;
-  }
-  60% {
-    text-shadow: 2px 2px #ffcad4, -2px -2px #ff5c8a;
-  }
-  80% {
-    text-shadow: -1px 1px #ff5c8a, 1px -1px #ffcad4;
-  }
-  100% {
-    text-shadow: 0px 0px #000;
-  }
-}
+  <footer class="site-footer">
+    <p>© 2025 Crimson Confession — Room 3 is always open.</p>
+  </footer>
+</body>
+</html>
