@@ -78,6 +78,7 @@ h1, h2, .title, .room-label {
   font-family: 'Orbit', sans-serif;
   color: #666;
 }
+
 /* Room 3 confession thread styling */
 .confession-thread {
   background: #111;
@@ -112,4 +113,25 @@ h1, h2, .title, .room-label {
   margin: 0;
   font-style: italic;
   color: #ddd;
+}
+
+/* Thread-style forum post blocks */
+.thread-post {
+  background-color: #1a0a0f;
+  border-left: 4px solid #ff5c8a;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #ff5c8a33;
+}
+
+.thread-post h3 {
+  color: #ff7b8b;
+  font-family: 'Orbit', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.thread-post p {
+  color: #ccc;
+  line-height: 1.6;
 }
