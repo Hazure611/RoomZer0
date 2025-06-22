@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Confession Code | Crimson Confession</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: #0b0b0b;
+      color: #ff5c8a;
+      font-family: 'Orbit', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #ff5c8a;
+    }
+    #scramble-word {
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+      letter-spacing: 0.15em;
+      user-select: none;
+    }
+    input[type="text"] {
+      padding: 0.7rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 6px;
+      width: 300px;
+      text-align: center;
+      outline: none;
+      color: #000;
+    }
+    button {
+      margin-top: 1rem;
+      background: #ff5c8a;
+      color: #0b0b0b;
+      font-weight: bold;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #ff85a1;
+    }
+    #result {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      min-height: 1.5em;
+      color: #ffcad4;
+      text-shadow: 0 0 5px #ff5c8a;
+    }
+    #next-btn {
+      margin-top: 2rem;
+      background: #ff85a1;
+      color: #0b0b0b;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Confession Code</h1>
+  <p>Unscramble the word below. It's connected to Crimson Confession's secrets...</p>
+
+  <div id="scramble-word">loading...</div>
+
+  <input type="text" id="guess" placeholder="Your guess here" autocomplete="off" />
+  <button onclick="checkGuess()">Check</button>
+  
+  <div id="result"></div>
+  <button id="next-btn" onclick="nextWord()">Next Word</button>
+
+  <script>
+    const words = [
+      "obsession",
+      "confession",
+      "heartbeat",
+      "whisper",
+      "shrine",
+      "crimson",
+      "silence",
+      "echo",
+      "surei",
+      "diary",
+      "secret",
+      "love",
+      "broken",
+      "chaos",
+      "shadow"
+    ];
+
+    let currentWord = "";
+    let scrambledWord = "";
+
+    function scramble(word) {
+      const arr = word.split('');
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      // If scrambled is same as original, reshuffle
+      if(arr.join('') === word) return scramble(word);
+      return arr.join('');
+    }
+
+    function newWord() {
+      const idx = Math.floor(Math.random() * words.length);
+      currentWord = words[idx];
+      scrambledWord = scramble(currentWord);
+      document.getElementById('scramble-word').textContent = scrambledWord.toUpperCase();
+      document.getElementById('guess').value = '';
+      document.getElementById('result').textContent = '';
+      document.getElementById('next-btn').style.display = 'none';
+    }
+
+    function checkGuess() {
+      const guess = document.getElementById('guess').value.trim().toLowerCase();
+      const resultEl = document.getElementById('result');
+      if(guess === "") {
+        resultEl.textContent = "You gotta type something first!";
+        return;
+      }
+      if(guess === currentWord) {
+        resultEl.textContent = "🔥 Correct! You cracked the code.";
+        document.getElementById('next-btn').style.display = 'inline-block';
+      } else {
+        resultEl.textContent = "❌ Nope, try again.";
+      }
+    }
+
+    function nextWord() {
+      newWord();
+      document.getElementById('guess').focus();
+    }
+
+    // Initialize game on page load
+    newWord();
+  </script>
+</body>
+</html>
