@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>File Inspection: Surei’s Obsession</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    body {
+      font-family: 'Orbit', sans-serif;
+      background-color: #0b0b0b;
+      color: #f2f2f2;
+      padding: 2rem;
+    }
+
+    .inspection-container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #330000;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      color: #ff7b8b;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .item {
+      position: relative;
+      width: 200px;
+      cursor: pointer;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #5c0f0f;
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover img {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    .info-box {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #111;
+      border: 1px dashed #8b0000;
+      border-radius: 8px;
+      font-family: monospace;
+      color: #ffcad4;
+      display: none;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      color: #eee;
+      text-decoration: none;
+      border-bottom: 1px dashed #eee;
+    }
+
+    .back-link a:hover {
+      color: #ff5c8a;
+      border-color: #ff5c8a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="inspection-container">
+    <h1>File Inspection: Surei’s Obsession</h1>
+    <p style="text-align:center; color:#ccc;">
+      Recovered folder: <code>/Echo/Surei/private/relics/obsession-room0/</code><br>
+      Click an item to reveal its logged note.
+    </p>
+
+    <div class="gallery">
+      <div class="item" onclick="showNote('Echo’s underwear (pair #1) — used. He sniffed it until dawn.')">
+        <img src="../images/room0-echo-undie1.jpg" alt="Echo's Undies 1">
+        <div class="caption">undie_01.jpg</div>
+      </div>
+      <div class="item" onclick="showNote('Echo’s underwear (pair #2) — unwashed. Taken the night she cried.')">
+        <img src="../images/room0-echo-undie2.jpg" alt="Echo's Undies 2">
+        <div class="caption">undie_02.jpg</div>
+      </div>
+      <div class="item" onclick="showNote('Surveillance photo. Echo leaving her building, 1:43AM. Hair damp. No jacket.')">
+        <img src="../images/room0-echo-photo.png" alt="Echo's Photo">
+        <div class="caption">echo_spotted.png</div>
+      </div>
+      <div class="item" onclick="showNote('“The Chair” — where she was edged and never allowed to come.')">
+        <img src="../images/room0-the-chair.jpg" alt="The Chair">
+        <div class="caption">room0_furniture.jpg</div>
+      </div>
+    </div>
+
+    <div class="info-box" id="noteBox"></div>
+
+    <div class="back-link">
+      <a href="../games.html">← Back to Games</a>
+    </div>
+  </div>
+
+  <script>
+    function showNote(message) {
+      const box = document.getElementById("noteBox");
+      box.innerText = message;
+      box.style.display = "block";
+    }
+  </script>
+</body>
+</html>
