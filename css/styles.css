@@ -1,87 +1,83 @@
-/* Reset & base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Orbit&display=swap');
 
-body {
-  background-color: #121212;
-  color: #eee;
+/* Base font */
+body, p, a, code {
   font-family: 'Orbit', sans-serif;
-  line-height: 1.5;
-  padding: 20px;
+  color: #ccc;
+  background-color: #0b0b0b;
 }
 
-.site-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.title {
-  font-size: 3rem;
+/* Headings with Creepster font */
+h1, h2, .title, .room-label {
+  font-family: 'Creepster', cursive;
   color: #ff5c8a;
-  letter-spacing: 0.2em;
-  margin-bottom: 0.2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #aaa;
-  font-style: italic;
-}
-
-.profile-links {
-  margin-top: 1rem;
-}
-
+/* Navigation buttons */
 .profile-button {
-  display: inline-block;
-  background: #ff5c8a;
-  color: #121212;
-  padding: 0.7rem 1.2rem;
-  margin: 0 0.5rem;
-  border-radius: 8px;
-  font-weight: bold;
+  font-family: 'Orbit', sans-serif;
+  background-color: #420f15;
+  color: #ff5c8a;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0.3rem;
+  border-radius: 6px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .profile-button:hover {
-  background: #ffcad4;
-  color: #121212;
+  background-color: #ff5c8a;
+  color: #0b0b0b;
+  cursor: pointer;
 }
 
+/* Relics Gallery */
 .relics-gallery {
-  max-width: 900px;
-  margin: 0 auto 4rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .relic {
-  background: #1a1a1a;
-  border-radius: 12px;
+  background-color: #1a1a1a;
   padding: 1rem;
-  box-shadow: 0 0 15px #420f15;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #420f15;
+  max-width: 280px;
   text-align: center;
 }
 
 .relic img {
   max-width: 100%;
   border-radius: 10px;
-  margin-bottom: 0.8rem;
+  transition: transform 0.3s ease;
 }
 
-.relic p {
-  color: #ccc;
-  font-style: italic;
+/* Add hover zoom effect */
+.relic img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
-.site-footer {
-  text-align: center;
-  color: #666;
-  padding: 1rem 0;
-  border-top: 1px solid #333;
+/* Fix for clickable images in file inspection */
+.clickable-image {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.clickable-image:hover {
+  border-color: #ff5c8a;
+  transform: scale(1.05);
+}
+
+/* Secret hint styling */
+.secret-hint a:hover {
+  color: #ffcad4;
 }
