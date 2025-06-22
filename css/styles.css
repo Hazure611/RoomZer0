@@ -58,41 +58,6 @@ h1, h2, .title, .room-label {
   cursor: pointer;
 }
 
-/* Relics Gallery layout */
-.relics-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.3rem;
-  justify-content: center;
-  margin-top: 2rem;
-  padding: 0 1rem;
-}
-
-.relic {
-  background-color: #1a1a1a;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #420f15;
-  max-width: 280px;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.relic:hover {
-  box-shadow: 0 0 30px #ff5c8a;
-}
-
-.relic img {
-  max-width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.relic img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 /* Secret hint styling */
 .secret-hint a {
   font-family: 'Orbit', sans-serif;
@@ -113,13 +78,3 @@ h1, h2, .title, .room-label {
   font-family: 'Orbit', sans-serif;
   color: #666;
 }
-
-/* Clickable images for File Inspection */
-.clickable-image {
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: border-color 0.3s ease, transform 0.3s ease;
-}
-
-.clickable-image:hover {
-  border
