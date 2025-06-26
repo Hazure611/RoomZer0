@@ -147,19 +147,3 @@ h1, h2, .title, .room-label {
   line-height: 1.6;
   white-space: pre-line;
 }
-
-/* Optional glitch animation (for usernames/text) */
-.glitch {
-  position: relative;
-  color: #ff5c8a;
-  animation: glitch 1.5s infinite;
-}
-
-@keyframes glitch {
-  0%   { text-shadow: 2px 2px #ff5c8a, -2px -2px #ffcad4; }
-  20%  { text-shadow: -2px 1px #ff5c8a, 2px -1px #ffcad4; }
-  40%  { text-shadow: 1px -2px #ffcad4, -1px 2px #ff5c8a; }
-  60%  { text-shadow: 2px 2px #ffcad4, -2px -2px #ff5c8a; }
-  80%  { text-shadow: -1px 1px #ff5c8a, 1px -1px #ffcad4; }
-  100% { text-shadow: 0px 0px #000; }
-}
