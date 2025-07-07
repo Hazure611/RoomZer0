@@ -1,149 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Orbit&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room 5: The Crimson Cock Book</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&family=Creepster&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://i.imgur.com/C0FUZVn.png') repeat-x top center;
+      background-size: contain;
+      z-index: 9999;
+      pointer-events: none;
+      animation: drip-animation 6s infinite ease-in-out;
+      opacity: 0.6;
+    }
 
-/* Base font and background */
-body, p, a, code {
-  font-family: 'Orbit', sans-serif;
-  color: #ccc;
-  background-color: #0b0b0b;
-  margin: 0;
-  padding: 0;
-}
+    @keyframes drip-animation {
+      0%, 100% { transform: translateY(-5px); }
+      50% { transform: translateY(10px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="title">ROOM 5: The Crimson Cock Book</h1>
+    <p class="subtitle">Lick the page. Obey the recipe.</p>
+    <nav class="profile-links">
+      <a href="index.html" class="profile-button">← Back to Index</a>
+    </nav>
+  </header>
 
-/* Headings with Creepster font */
-h1, h2, .title, .room-label {
-  font-family: 'Creepster', cursive;
-  color: #ff5c8a;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-}
+  <main>
+    <section class="confession-thread">
+      <h2>🍓 COCK BOOK ENTRIES</h2>
 
-/* Page header styling */
-.site-header {
-  background-color: #1a0a0f;
-  padding: 2rem 1rem;
-  text-align: center;
-  box-shadow: 0 0 15px #420f15;
-}
+      <!-- Entry 001 -->
+      <div class="thread-post">
+        <h3>@milk_mouthed_lover</h3>
+        <span class="timestamp">2025‑06‑26 02:00 AM</span>
+        <p>
+          <strong>Echo’s Breakdown Bake™</strong><br /><br />
+          ✦ 2 eggs of milk (don’t question it)<br />
+          ✦ 1 cup ghost sugar (sift through his absence)<br />
+          ✦ A pinch of punched salt (cry into your wrist first)<br />
+          ✦ Bake at 450°F until the walls scream back<br /><br />
+          Frost with regret. Serve naked. Consume alone.
+        </p>
+      </div>
 
-.subtitle {
-  color: #ff5c8a;
-  font-style: italic;
-  margin-top: 0.3rem;
-}
+      <!-- Entry 002 -->
+      <div class="thread-post">
+        <h3>@booty_shaker_baker</h3>
+        <span class="timestamp">2025‑06‑26 02:34 AM</span>
+        <p>
+          <strong>Sweet & Wild Wail Pie</strong><br /><br />
+          ✦ 2 pints of sugar (with pice — yes, pice)<br />
+          ✦ 12 garnished sesame wail<br />
+          ✦ 12 1/2 pcs of granulated mortar<br />
+          ✦ 5 grains of wheat and wild<br /><br />
+          Mix under the full moon. Do not look away.<br />
+          Scream back and bang your head on the wall and cry tears of joy while shaking your booty.<br /><br />
+          Sprinkle with guilt. Serve while moaning.
+        </p>
+      </div>
 
-/* Navigation buttons */
-.profile-links {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-}
+      <!-- Entry 003 -->
+      <div class="thread-post">
+        <h3>@sinful_sundae</h3>
+        <span class="timestamp">2025‑06‑26 03:00 AM</span>
+        <p>
+          <strong>The Devil’s Whipped Cream</strong><br /><br />
+          ✦ 3 tablespoons of soul cream<br />
+          ✦ 1 pint of blood red cherries<br />
+          ✦ A dash of liquid lust (stir while moaning)<br />
+          ✦ 2 drops of sinful vanilla extract<br /><br />
+          Whisk it all together under candlelight.<br />
+          Frost your tongue with decadence. Top with sin.<br /><br />
+          Serve chilled. Take it slow.
+        </p>
+      </div>
 
-.profile-button {
-  font-family: 'Orbit', sans-serif;
-  background-color: #420f15;
-  color: #ff5c8a;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
+      <!-- Entry 004 -->
+      <div class="thread-post">
+        <h3>@cursed_cook</h3>
+        <span class="timestamp">2025‑06‑26 03:45 AM</span>
+        <p>
+          <strong>Forbidden Fruit Jam</strong><br /><br />
+          ✦ 5 ripe blood oranges<br />
+          ✦ 4 tablespoons of dark honey<br />
+          ✦ 1 teaspoon of crushed crimson petals<br />
+          ✦ A pinch of midnight salt (harvested after dusk)<br /><br />
+          Simmer the fruit until it’s as soft as the lies you tell yourself.<br />
+          Stir in honey with the rhythm of your heartbeat.<br /><br />
+          Let it cool while you whisper apologies. Spread it thick. Consume in silence.<br /><br />
+          Best served at dawn, when all is forgiven.
+        </p>
+      </div>
+      <!-- All other entries remain the same -->
+    </section>
+  </main>
 
-.profile-button:hover {
-  background-color: #ff5c8a;
-  color: #0b0b0b;
-  cursor: pointer;
-}
-
-/* Secret hint styling */
-.secret-hint a {
-  font-family: 'Orbit', sans-serif;
-  color: #ff5c8a;
-  text-decoration: none;
-  border-bottom: 1px dashed #ff5c8a;
-  transition: color 0.3s ease;
-}
-
-.secret-hint a:hover {
-  color: #ffcad4;
-}
-
-/* Footer styling */
-.site-footer, footer {
-  text-align: center;
-  padding: 2rem;
-  font-family: 'Orbit', sans-serif;
-  color: #666;
-}
-
-/* Room 3 confession thread styling */
-.confession-thread {
-  background: #111;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #ff5c8a44;
-  margin-bottom: 2rem;
-  color: #ffcad4;
-}
-
-.confession-thread h2 {
-  font-family: 'Creepster', cursive;
-  color: #ff5c8a;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.confession-thread .confessor {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border-left: 3px solid #ff5c8a;
-  background: #1a1a1a;
-  border-radius: 6px;
-}
-
-.confession-thread .confessor h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #ff8fa1;
-}
-
-.confession-thread .confessor p {
-  margin: 0;
-  font-style: italic;
-  color: #ddd;
-}
-
-/* Thread-style forum post blocks (Room 3 + Surei Obsession) */
-.thread-post {
-  background-color: #1a0a0f;
-  border-left: 4px solid #ff5c8a;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 0 10px #ff5c8a33;
-  position: relative;
-}
-
-.thread-post h3 {
-  color: #ff7b8b;
-  font-family: 'Orbit', sans-serif;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.thread-post .timestamp {
-  font-size: 0.85rem;
-  color: #888;
-  font-style: italic;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.thread-post p {
-  color: #ccc;
-  line-height: 1.6;
-  white-space: pre-line;
-}
+  <footer class="site-footer">
+    <p>© 2025 Crimson Confession — Room 5 is for hungry ghosts only.</p>
+  </footer>
+</body>
+</html>
