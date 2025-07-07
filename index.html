@@ -11,6 +11,34 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Fade-in animation for diary section */
+    section {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hover FX for all buttons */
+    .profile-button {
+      transition: all 0.3s ease;
+    }
+
+    .profile-button:hover {
+      background-color: #ffcad4 !important;
+      color: #0b0b0b !important;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
