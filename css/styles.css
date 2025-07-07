@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Room 5: The Crimson Cock Book</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbit&family=Creepster&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>Crimson Confession</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Blood Drip Overlay -->
   <style>
     body::before {
       content: "";
@@ -14,8 +21,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: url('https://i.imgur.com/C0FUZVn.png') repeat-x top center;
-      background-size: contain;
+      background: none; /* removed broken imgur link */
       z-index: 9999;
       pointer-events: none;
       animation: drip-animation 6s infinite ease-in-out;
@@ -26,89 +32,84 @@
       0%, 100% { transform: translateY(-5px); }
       50% { transform: translateY(10px); }
     }
+
+    section {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .profile-button {
+      transition: all 0.3s ease;
+    }
+
+    .profile-button:hover {
+      background-color: #ffcad4 !important;
+      color: #0b0b0b !important;
+      cursor: pointer;
+    }
   </style>
 </head>
+
 <body>
   <header class="site-header">
-    <h1 class="title">ROOM 5: The Crimson Cock Book</h1>
-    <p class="subtitle">Lick the page. Obey the recipe.</p>
+    <h1 class="title">CRIMSON CONFESSION</h1>
+    <p class="subtitle">Echo’s Silence, Surei’s Shrine</p>
+
     <nav class="profile-links">
-      <a href="index.html" class="profile-button">← Back to Index</a>
+      <a href="echo.html" class="profile-button">Echo Onigahara</a>
+      <a href="surei.html" class="profile-button">Surei Chiya</a>
+      <a href="confession-room.html" class="profile-button">Submit a Confession</a>
+
+      <!-- Room 3 -->
+      <a href="room3.html" class="profile-button" style="background: #1a0a0f; color: #ffcad4; border: 1px dashed #ff5c8a;">
+        🕷️ Room 3: The Thread
+      </a>
+
+      <!-- Room 4 -->
+      <a href="surei-obsession.html" class="profile-button" style="background: #1a0a0f; color: #ff8fa1; border: 1px dashed #ff5c8a;">
+        🩶 Room 4: Surei’s Obsession
+      </a>
+
+      <!-- Room 5 -->
+      <a href="cockbook.html" class="profile-button" style="background: #1a0a0f; color: #fbb; border: 1px dashed #ff5c8a;">
+        🍓 Room 5: The Crimson Cock Book
+      </a>
+
+      <a href="about.html" class="profile-button">About the Project</a>
+      <a href="order.html" class="profile-button">Order the Book</a>
     </nav>
   </header>
 
   <main>
-    <section class="confession-thread">
-      <h2>🍓 COCK BOOK ENTRIES</h2>
+    <section style="text-align: center; margin-top: 4rem;">
+      <h2 class="room-label" style="color: #ff7b8b;">🩸 Weekly Diary Drops</h2>
+      <p>
+        Echo never stopped writing.<br />
+        Every week, we drop a new entry straight from her mind.<br />
+        Confessions. Cravings. Chaos.<br /><br />
+        📥 Send a blank email to:<br />
+        <code style="color: #ffcad4; font-size: 1.1rem;">confessionroom0X@proton.me</code><br />
+        to get added to the drop list.
+      </p>
 
-      <!-- Entry 001 -->
-      <div class="thread-post">
-        <h3>@milk_mouthed_lover</h3>
-        <span class="timestamp">2025‑06‑26 02:00 AM</span>
-        <p>
-          <strong>Echo’s Breakdown Bake™</strong><br /><br />
-          ✦ 2 eggs of milk (don’t question it)<br />
-          ✦ 1 cup ghost sugar (sift through his absence)<br />
-          ✦ A pinch of punched salt (cry into your wrist first)<br />
-          ✦ Bake at 450°F until the walls scream back<br /><br />
-          Frost with regret. Serve naked. Consume alone.
-        </p>
-      </div>
-
-      <!-- Entry 002 -->
-      <div class="thread-post">
-        <h3>@booty_shaker_baker</h3>
-        <span class="timestamp">2025‑06‑26 02:34 AM</span>
-        <p>
-          <strong>Sweet & Wild Wail Pie</strong><br /><br />
-          ✦ 2 pints of sugar (with pice — yes, pice)<br />
-          ✦ 12 garnished sesame wail<br />
-          ✦ 12 1/2 pcs of granulated mortar<br />
-          ✦ 5 grains of wheat and wild<br /><br />
-          Mix under the full moon. Do not look away.<br />
-          Scream back and bang your head on the wall and cry tears of joy while shaking your booty.<br /><br />
-          Sprinkle with guilt. Serve while moaning.
-        </p>
-      </div>
-
-      <!-- Entry 003 -->
-      <div class="thread-post">
-        <h3>@sinful_sundae</h3>
-        <span class="timestamp">2025‑06‑26 03:00 AM</span>
-        <p>
-          <strong>The Devil’s Whipped Cream</strong><br /><br />
-          ✦ 3 tablespoons of soul cream<br />
-          ✦ 1 pint of blood red cherries<br />
-          ✦ A dash of liquid lust (stir while moaning)<br />
-          ✦ 2 drops of sinful vanilla extract<br /><br />
-          Whisk it all together under candlelight.<br />
-          Frost your tongue with decadence. Top with sin.<br /><br />
-          Serve chilled. Take it slow.
-        </p>
-      </div>
-
-      <!-- Entry 004 -->
-      <div class="thread-post">
-        <h3>@cursed_cook</h3>
-        <span class="timestamp">2025‑06‑26 03:45 AM</span>
-        <p>
-          <strong>Forbidden Fruit Jam</strong><br /><br />
-          ✦ 5 ripe blood oranges<br />
-          ✦ 4 tablespoons of dark honey<br />
-          ✦ 1 teaspoon of crushed crimson petals<br />
-          ✦ A pinch of midnight salt (harvested after dusk)<br /><br />
-          Simmer the fruit until it’s as soft as the lies you tell yourself.<br />
-          Stir in honey with the rhythm of your heartbeat.<br /><br />
-          Let it cool while you whisper apologies. Spread it thick. Consume in silence.<br /><br />
-          Best served at dawn, when all is forgiven.
-        </p>
-      </div>
-      <!-- All other entries remain the same -->
+      <p style="margin-top: 2rem; color: #888;">
+        🖋️ Written by <strong><a href="https://www.amazon.com/author/hazuresaurvale25" target="_blank" rel="noopener noreferrer" style="color: #ff5c8a; text-decoration: none;">Hazure Vale</a></strong><br />
+        (Blood-soaked, guilt-wracked, doomed romantic).
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2025 Crimson Confession — Room 5 is for hungry ghosts only.</p>
+    <p>© 2025 Crimson Confession — Built with obsession and decay</p>
   </footer>
 </body>
 </html>
