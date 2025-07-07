@@ -10,10 +10,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 
+  <!-- Blood Drip Overlay -->
   <style>
-    /* Fade-in animation for diary section */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: none; /* removed broken imgur link */
+      z-index: 9999;
+      pointer-events: none;
+      animation: drip-animation 6s infinite ease-in-out;
+      opacity: 0.6;
+    }
+
+    @keyframes drip-animation {
+      0%, 100% { transform: translateY(-5px); }
+      50% { transform: translateY(10px); }
+    }
+
     section {
       opacity: 0;
       transform: translateY(20px);
@@ -28,7 +47,6 @@
       }
     }
 
-    /* Hover FX for all buttons */
     .profile-button {
       transition: all 0.3s ease;
     }
