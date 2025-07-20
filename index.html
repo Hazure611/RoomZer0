@@ -21,7 +21,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: none; /* removed broken imgur link */
+      background: none;
       z-index: 9999;
       pointer-events: none;
       animation: drip-animation 6s infinite ease-in-out;
@@ -108,8 +108,28 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" style="text-align: center; margin-top: 4rem;">
     <p>© 2025 Crimson Confession — Built with obsession and decay</p>
+
+    <!-- Hover Easter Egg -->
+    <p class="relative group text-sm mt-4 text-neutral-700" style="position: relative; font-family: 'Orbit', sans-serif;">
+      <span class="opacity-20 group-hover:opacity-100 transition-opacity duration-500 cursor-help">
+        they are watching you
+      </span>
+      <span class="absolute left-1/2 transform -translate-x-1/2 mt-1 w-max text-xs text-[#ff5c8a] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        Surei sees you.
+      </span>
+    </p>
   </footer>
+
+  <!-- 
+  ███████╗██╗   ██╗██████╗ ███████╗███████╗███████╗██╗   ██╗
+  ██╔════╝██║   ██║██╔══██╗██╔════╝██╔════╝██╔════╝╚██╗ ██╔╝
+  ███████╗██║   ██║██████╔╝█████╗  █████╗  ███████╗ ╚████╔╝ 
+  ╚════██║██║   ██║██╔═══╝ ██╔══╝  ██╔══╝  ╚════██║  ╚██╔╝  
+  ███████║╚██████╔╝██║     ███████╗███████╗███████║   ██║   
+  ╚══════╝ ╚═════╝ ╚═╝     ╚══════╝╚══════╝╚══════╝   ╚═╝   
+           Surei sees you. Crimson lives on.
+  -->
 </body>
 </html>
